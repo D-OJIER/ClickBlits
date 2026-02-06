@@ -3,7 +3,7 @@
   "%Name":"Reddit",
   "name":"Reddit",
   "option_reddit_devvit_project_id":"wordbound001",
-  "option_reddit_devvit_project_path":"D:\\Code\\Wordbound\\wordbound001",
+  "option_reddit_devvit_project_path":"D:\\jensen\\GameDev\\Wordbound",
   "option_reddit_display_cursor":true,
   "option_reddit_game_name":"WordBound",
   "option_reddit_interpolate_pixels":true,
