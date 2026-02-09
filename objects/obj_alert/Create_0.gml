@@ -1,1 +1,1 @@
-life = 60; // 1 second at 60fps
+life = 120; // 1 second = 60fps 

@@ -1,20 +1,28 @@
-if (random(100) < 1)
+if (game_state == STATE_PLAY)
 {
-    if (!instance_exists(obj_alert))
+    game_time = (current_time - start_time) / 1000;
+}
+if (instance_number(obj_alert) == 0)
+{
+    if (irandom(360) == 0) // about every 6 sec
     {
-        instance_create_layer(
-            random(room_width),
-            random(room_height),
-            "Instances",
-            obj_alert
-        );
+        var xx = irandom_range(100, room_width - 100);
+        var yy = irandom_range(100, room_height - 100);
+
+        instance_create_layer(xx, yy, "Instances", obj_alert);
     }
 }
 
-var b = instance_find(obj_boss, 0);
-
-if (b != noone && b.hp <= 0 && !finished)
+// Win controls
+if (game_state == STATE_WIN)
 {
-    finished = true;
-    final_time = current_time - start_time;
+    if (keyboard_check_pressed(ord("R")))
+    {
+        room_restart();
+    }
+
+    if (keyboard_check_pressed(vk_escape))
+    {
+        game_end();
+    }
 }

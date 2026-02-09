@@ -1,7 +1,8 @@
 var t = (current_time - start_time) div 1000;
 draw_text(16, 16, "Time: " + string(t));
 
-if (finished)
+if (game_state == STATE_WIN)
 {
-    draw_text(16, 36, "Cleared in " + string(final_time div 1000) + "s");
+     var t = final_time div 1000;
+    draw_text(16, 36, "Cleared in " + string(t) + "s");
 }

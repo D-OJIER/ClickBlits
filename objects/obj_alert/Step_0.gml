@@ -6,10 +6,23 @@ if (life <= 0)
 
     if (b != noone)
     {
+        // Heal boss
         b.hp += 8;
+        b.hp = min(b.hp, b.max_hp);
+		
+		 obj_game.input_locked = true;	
 
-        if (b.hp > b.max_hp)
-            b.hp = b.max_hp;
+        // Play heal / miss animation
+        with (b)
+        {
+            if (!dead && !healing)
+            {
+				healing=true;
+                sprite_index = Golem_1_attack;
+                image_index = 0;
+                image_speed = 0.5;
+            }
+        }
     }
 
     instance_destroy();

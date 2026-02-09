@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_damage_boss",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_damage_boss",
+  "parent":{
+    "name":"Resources",
+    "path":"folders/Resources.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
