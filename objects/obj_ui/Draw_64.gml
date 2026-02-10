@@ -24,10 +24,5 @@ if (boss != noone && boss.max_hp > 0)
         1
     );
 }
-if (obj_game.input_locked)
-{
-    draw_set_alpha(0.3);
-    draw_rectangle(0,0,display_get_gui_width(),display_get_gui_height(),false);
-    draw_set_alpha(1);
-}
+
 

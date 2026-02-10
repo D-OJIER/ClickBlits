@@ -18,6 +18,7 @@ if (life <= 0)
             if (!dead && !healing)
             {
 				healing=true;
+				audio_play_sound(healing, 0, false);
                 sprite_index = Golem_1_attack;
                 image_index = 0;
                 image_speed = 0.5;

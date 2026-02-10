@@ -30,6 +30,8 @@ if (hp <= 0 && !dead)
 
     obj_game.game_state = obj_game.STATE_WIN;
     obj_game.game_over = true;
+	obj_game.show_end = true;
+	obj_game.input_locked = false;
 	
 	 obj_game.final_time = current_time - obj_game.start_time
 }
