@@ -8,6 +8,9 @@
   "instanceCreationOrder":[
     {"name":"inst_5945D515","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6C0E5E6C","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_447B16B9","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_661506E2","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_1E113F7E","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

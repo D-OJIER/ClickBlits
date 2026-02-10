@@ -24,35 +24,6 @@ if (show_end)
     end_alpha = min(end_alpha + 0.05, 1);
 }
 
-// Handle end screen button clicks
-if (show_end && mouse_check_button_pressed(mb_left))
-{
-    // Mouse in GUI coords
-    var mx = device_mouse_x_to_gui(0);
-    var my = device_mouse_y_to_gui(0);
 
-    // Retry button
-    if (point_in_rectangle(
-        mx, my,
-        btn_retry_x,
-        btn_retry_y,
-        btn_retry_x + sprite_get_width(retry_btn) * btn_scale,
-        btn_retry_y + sprite_get_height(retry_btn) * btn_scale
-    ))
-    {
-        room_restart();
-    }
 
-    // Quit button
-    if (point_in_rectangle(
-        mx, my,
-        btn_quit_x,
-        btn_quit_y,
-        btn_quit_x + sprite_get_width(quit_btn) * btn_scale,
-        btn_quit_y + sprite_get_height(quit_btn) * btn_scale
-    ))
-    {
-        game_end();
-    }
-}
 
